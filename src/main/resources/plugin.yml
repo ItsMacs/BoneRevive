@@ -1,0 +1,7 @@
+name: BoneRevive
+version: '${project.version}'
+main: eu.maxpi.fiverr.bonerevive.BoneRevive
+api-version: 1.18
+authors: [Macslolz]
+description: Plugin to allow bone revives
+website: fiverr.com/macslolz

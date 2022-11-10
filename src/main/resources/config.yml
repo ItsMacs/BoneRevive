@@ -1,0 +1,4 @@
+#Configuration file for BoneRevive
+
+lang:
+  bone-name: "&e%player%&6's bone"
