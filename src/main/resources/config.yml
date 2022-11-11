@@ -2,3 +2,11 @@
 
 lang:
   bone-name: "&e%player%&6's bone"
+  stand-name: "&e%player%&6's bone structure"
+  crystal-name: "&dRevive Crystal"
+  gui-name: "&eRevive GUI"
+  unbanned: "&aPlayer %unbanner% has revived %player%!"
+  no-hearts: "&cYou've ran out of hearts!"
+  banned: "&c%player% ran out of hearts and was banned!"
+
+crystal-data: 1

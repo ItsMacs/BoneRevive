@@ -10,7 +10,9 @@ public class PluginLoader {
 
     public static HashMap<String, String> lang = new HashMap<>();
 
-    public static HashMap<String, Integer> hearts = new HashMap<>();
+    public static HashMap<String, Double> hearts = new HashMap<>();
+
+    public static int crystalData;
 
     public static void load(){
         BoneRevive.getInstance().saveResource("config.yml", false);
@@ -20,8 +22,10 @@ public class PluginLoader {
             lang.put(s, ColorTranslator.translate(config.getString("lang." + s)));
         });
 
+        crystalData = config.getInt("crystal-data");
+
         YamlConfiguration storage = YamlConfiguration.loadConfiguration(new File(BoneRevive.getInstance().getDataFolder() + "/storage.yml"));
-        storage.getKeys(false).forEach(s -> hearts.put(s, storage.getInt(s)));
+        storage.getKeys(false).forEach(s -> hearts.put(s, storage.getDouble(s)));
     }
 
     public static void save(){
